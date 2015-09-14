@@ -69,20 +69,10 @@ for(var i = 0; i < initialList.length; i++){
 
 }
 
-
-
-
-
 var percentageCovered = 0;
 
 
 console.log("The entire amount paid out is $" + totalPayedOut);
-
-	newEl = document.createElement('li');
-	newText = document.createTextNode("The entire amount paid out is $" + totalPayedOut);
-	newEl.appendChild(newText);
-	position.appendChild(newEl);
-
 
 //function to determine percent covered
 function coveredPercent(type){
@@ -103,7 +93,6 @@ var moneyPaidOut = 0;
 //function to determine amount covered
 function coveredAmount(cost){
 
-	// var newInfoArray = [];
 	
 	var moneyPaidOut = Math.round(((cost.visitCost) * percentageCovered));
 	totalPayedOut += moneyPaidOut;
@@ -117,7 +106,4 @@ function coveredAmount(cost){
 	
 
 }
-
-
-// console.log(newInfoArray);
 
